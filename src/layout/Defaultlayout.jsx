@@ -1,11 +1,15 @@
 import React from 'react';
-
-function Defaultlayout({children}) {
+import Navbar from '../compopnents/Navbar';
+import Footer from '../compopnents/Footer';
+import ToTop from '../compopnents/ToTop';
+import { Outlet } from 'react-router-dom';
+function Defaultlayout() {
     return (
         <div>
             <Navbar/>
-            {children} 
+            <Outlet/>
             <Footer/>
+            <ToTop/>
         </div>
     );
 }

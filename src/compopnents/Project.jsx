@@ -17,31 +17,31 @@ function Project(props) {
             title: 'Booking app',
             image: bookingimage,
             desc: 'Website giúp cho người dùng tìm kiếm và đặt chỗ nghĩ tại địa điểm du lịch của mình. Công nghệ sử dụng: Nextjs,Nodejs, Mongoose, Redux, Reduxpersist. Vài trò của bản thân: phụ trách phần giao diện call các api render dữ liệu',
-            link: 'https://tralveltour.vercel.app',
+            link: 'https://bookingapp-n12.vercel.app',
         },
         {
             title: 'ClothesStore',
             image: clothes,
             desc: '-Website bán quần áo ở mức giao diện bao gồm cả reponsive. Công nghệ sử dụng: Reactjs, Scss và thư viện reponsive grid layout tự viết',
-            link: 'https://tralveltour.vercel.app',
+            link: 'https://myclothesstorelebaonhi12c1.vercel.app',
         },
         {
             title: 'SweetShop',
             image: sweetshop,
             desc: 'Mục đích: web site bán quần áo ở mức giao diện của thể đăng nhập đăng ký để thao tác với giỏi hàng và sản phẩm --có thể đăng ký tài khoản để đăng nhập--Tải khoản mẫu: username: lebaonhi, password: lebaonhi Công nghệ: Reactjs, ReactContext,..',
-            link: 'https://tralveltour.vercel.app',
+            link: 'https://storied-cannoli-eaefff.netlify.app/',
         },
         {
             title: 'Landing page',
             image: landingpage,
             desc: 'Mục đích: tạo một template landinhpage bao gồm cả reponsive. Công nghệ: Nextjs 12',
-            link: 'https://tralveltour.vercel.app',
+            link: 'https://landinglebaonhi12c1page.vercel.app/',
         },
         {
             title: 'Truyenyyclone',
             image: truyenyy,
             desc: 'Website giúp cho người dùng tìm kiếm, đọc những bộ truyện yêu thích của mình khi truy cập vào trang web Công nghệ sử dụng: Reatjs, Tailwindcss, và một số thư viện hỗ trợ khác như của Reactjs như react-slider-swiper toast-notify,...',
-            link: 'https://tralveltour.vercel.app',
+            link: 'https://truyenyy.vercel.app',
         },
     ]
     return (

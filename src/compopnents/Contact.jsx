@@ -45,16 +45,16 @@ function Contact(props) {
                 <div className='flex items-center gap-4 self-start mt-auto'>
                     <div className='text-textcolor italic'>Contact me with: </div>
                     <div className='flex items-center gap-2'>
-                        <Link to={'https://www.facebook.com/profile.php?id=100010189337411'} className='w-[40px] h-[40px] text-[24px] text-primary flex items-center justify-center rounded-full shadow-lg shadow-slate-300'>
+                        <Link to={'https://www.facebook.com/profile.php?id=100010189337411'} className='w-[40px] h-[40px] text-[24px] text-primary flex items-center justify-center rounded-full shadow-lg shadow-slate-300' target='_blank'>
                             <AiFillFacebook/>
                         </Link>
-                        <Link to={'https://github.com/lebaonhi12c1'} className='w-[40px] h-[40px] text-[24px] text-primary flex items-center justify-center rounded-full shadow-lg shadow-slate-300'>
+                        <Link target='_blank' to={'https://github.com/lebaonhi12c1'} className='w-[40px] h-[40px] text-[24px] text-primary flex items-center justify-center rounded-full shadow-lg shadow-slate-300'>
                             <AiFillGithub/>
                         </Link>
-                        <Link to={''} className='w-[40px] h-[40px] text-[24px] text-primary flex items-center justify-center rounded-full shadow-lg shadow-slate-300'>
+                        <Link target='_blank' to={''} className='w-[40px] h-[40px] text-[24px] text-primary flex items-center justify-center rounded-full shadow-lg shadow-slate-300'>
                             <AiFillLinkedin/>
                         </Link>
-                        <Link to={'https://gmail.com'} className='w-[40px] h-[40px] text-[24px] text-primary flex items-center justify-center rounded-full shadow-lg shadow-slate-300'>
+                        <Link target='_blank' to={'https://gmail.com'} className='w-[40px] h-[40px] text-[24px] text-primary flex items-center justify-center rounded-full shadow-lg shadow-slate-300'>
                             <AiFillMail/>
                         </Link>
                     </div>

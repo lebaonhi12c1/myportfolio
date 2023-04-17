@@ -17,7 +17,7 @@ function ToTop(props) {
     }
     return (
         top && (
-            <div className='fixed right-10 bottom-10 flex items-center justify-center rounded-full w-[40px] h-[40px] bg-primary shadow-lg shadow-primary/70 animate-bounce' onClick={handleToTop}>
+            <div className='fixed right-10 bottom-10 flex items-center justify-center rounded-full w-[40px] h-[40px] bg-primary shadow-lg shadow-primary/70 animate-bounce cursor-pointer' onClick={handleToTop}>
                 <AiOutlineArrowUp className='text-[24px] text-white'/>
             </div>
         )

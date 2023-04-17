@@ -1,41 +1,46 @@
 import React from 'react';
-
+import bookingimage from '../assets/booking2.jpg'
+import clothes from '../assets/clothesStore.jpg'
+import travel from '../assets/1971799.jpg'
+import sweetshop from '../assets/set-with-fashionable-women-s-clothing-jeans-sweater.jpg'
+import landingpage from '../assets/landingpage.jpg'
+import truyenyy from '../assets/6100_2_05.jpg'
 function Project(props) {
     const projectdata = [
         {
             title: 'travel tour',
-            image: 'https://static.wixstatic.com/media/nsplsh_98b9913621de415eb2d12568d30f67ef~mv2.jpg/v1/crop/x_0,y_0,w_4032,h_2839/fill/w_600,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image%20by%20Michael%20Rivera%20%F0%9F%87%B5%F0%9F%87%AD.jpg',
-            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quisquam sequi illo et ipsam, sint accusantium mollitia, quibusdam rem consectetur vel blanditiis tempore odio voluptates nam doloremque nemo atque alias.',
+            image: travel,
+            desc: 'Website giới thiệu thông tin của các chuyến tour du lịch, sử dụng được trên màn hình desktop và điện thoại',
             link: 'https://tralveltour.vercel.app',
         },
         {
-            title: 'travel tour',
-            image: '',
-            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quisquam sequi illo et ipsam, sint accusantium mollitia, quibusdam rem consectetur vel blanditiis tempore odio voluptates nam doloremque nemo atque alias.',
+            title: 'Booking app',
+            image: bookingimage,
+            desc: 'Website giúp cho người dùng tìm kiếm và đặt chỗ nghĩ tại địa điểm du lịch của mình. Công nghệ sử dụng: Nextjs,Nodejs, Mongoose, Redux, Reduxpersist. Vài trò của bản thân: phụ trách phần giao diện call các api render dữ liệu',
             link: 'https://tralveltour.vercel.app',
         },
         {
-            title: 'travel tour',
-            image: '',
-            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quisquam sequi illo et ipsam, sint accusantium mollitia, quibusdam rem consectetur vel blanditiis tempore odio voluptates nam doloremque nemo atque alias.',
+            title: 'ClothesStore',
+            image: clothes,
+            desc: '-Website bán quần áo ở mức giao diện bao gồm cả reponsive. Công nghệ sử dụng: Reactjs, Scss và thư viện reponsive grid layout tự viết',
             link: 'https://tralveltour.vercel.app',
         },
         {
-            title: 'travel tour',
-            image: '',
-            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quisquam sequi illo et ipsam, sint accusantium mollitia, quibusdam rem consectetur vel blanditiis tempore odio voluptates nam doloremque nemo atque alias.',
+            title: 'SweetShop',
+            image: sweetshop,
+            desc: 'Mục đích: web site bán quần áo ở mức giao diện của thể đăng nhập đăng ký để thao tác với giỏi hàng và sản phẩm --có thể đăng ký tài khoản để đăng nhập--Tải khoản mẫu: username: lebaonhi, password: lebaonhi Công nghệ: Reactjs, ReactContext,..',
             link: 'https://tralveltour.vercel.app',
         },
         {
-            title: 'travel tour',
-            image: '',
-            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quisquam sequi illo et ipsam, sint accusantium mollitia, quibusdam rem consectetur vel blanditiis tempore odio voluptates nam doloremque nemo atque alias.',
+            title: 'Landing page',
+            image: landingpage,
+            desc: 'Mục đích: tạo một template landinhpage bao gồm cả reponsive. Công nghệ: Nextjs 12',
             link: 'https://tralveltour.vercel.app',
         },
         {
-            title: 'travel tour',
-            image: '',
-            desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quisquam sequi illo et ipsam, sint accusantium mollitia, quibusdam rem consectetur vel blanditiis tempore odio voluptates nam doloremque nemo atque alias.',
+            title: 'Truyenyyclone',
+            image: truyenyy,
+            desc: 'Website giúp cho người dùng tìm kiếm, đọc những bộ truyện yêu thích của mình khi truy cập vào trang web Công nghệ sử dụng: Reatjs, Tailwindcss, và một số thư viện hỗ trợ khác như của Reactjs như react-slider-swiper toast-notify,...',
             link: 'https://tralveltour.vercel.app',
         },
     ]
@@ -49,7 +54,7 @@ function Project(props) {
                         <img src={item.image} alt={item.title} className=' h-[150px] object-cover rounded-md' />
                         <div className='text-[18px] text-textheading font-medium uppercase'>{item.title}</div>
                         <div className='text-textcolor text-[14px]'>{item.desc}</div>
-                        <a href={item.link} target='_blank' className='block py-[13px] px-[63px] hover:bg-primary hover:text-white border border-primary rounded-full  whitespace-nowrap duration-150 active:scale-90 text-primary'>View now</a>
+                        <a href={item.link} target='_blank' className='block py-[13px] px-[63px] hover:bg-primary hover:text-white border border-primary rounded-full  whitespace-nowrap duration-150 active:scale-90 text-primary mt-auto'>View now</a>
                     </div>
                 ))}
             </div>

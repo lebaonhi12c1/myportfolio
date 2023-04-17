@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 function Footer(props) {
     return (
-        <div className='bg-[#F8F8F8] border-t border-primary py-[63px]'>
+        <div className='bg-[#F8F8F8] border-t border-primary py-[63px] mt-[100px]'>
             <div className='root-container'>
-                <div className='grid grid-cols-5'>
+                <div className='grid grid-cols-5 sm:grid-cols-1 gap-4'>
                     <div className=' col-span-2'>
                         <div className='flex flex-col gap-[20px]'>
                             <div className='text-primary uppercase'>lebaonhi12c1</div>
@@ -29,28 +29,28 @@ function Footer(props) {
                     <div className ='flex flex-col gap-[20px]'>
                         <div className='text-textheading uppercase'>contact</div>
                         <div>
-                            <div>item</div>
-                            <div>item</div>
-                            <div>item</div>
-                            <div>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
                         </div>
                     </div>
                     <div className ='flex flex-col gap-[20px]'>
                         <div className='text-textheading uppercase'>contact</div>
                         <div>
-                            <div>item</div>
-                            <div>item</div>
-                            <div>item</div>
-                            <div>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
                         </div>
                     </div>
                     <div className ='flex flex-col gap-[20px]'>
                         <div className='text-textheading uppercase'>contact</div>
                         <div>
-                            <div>item</div>
-                            <div>item</div>
-                            <div>item</div>
-                            <div>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
+                            <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer'>item</div>
                         </div>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ function Footer(props) {
     return (
         <div className='bg-[#F8F8F8] border-t border-primary py-[63px] mt-[100px]'>
             <div className='root-container'>
-                <div className='grid sm:grid-cols-1 grid-cols-1 gap-4'>
+                <div className='grid sm:grid-cols-1 grid-cols-5 gap-4'>
                     <div className=' col-span-3 sm:col-span-1'>
                         <div className='flex flex-col gap-[20px]'>
                             <div className='text-primary uppercase'>lebaonhi12c1</div>

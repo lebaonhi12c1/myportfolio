@@ -61,7 +61,7 @@ function Footer(props) {
                                 </Link>
                             </div>
                             <div className='hover:text-primary hover:translate-x-1 duration-150 cursor-pointer text-textcolor hover:italic'>
-                                <Link to={' https://truyenyy.vercel.app'} target='_blank'>
+                                <Link to={'https://truyenyy.vercel.app'} target='_blank'>
                                     Truyenyy
                                 </Link>
                             </div>

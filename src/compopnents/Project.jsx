@@ -5,6 +5,7 @@ import travel from '../assets/1971799.jpg'
 import sweetshop from '../assets/set-with-fashionable-women-s-clothing-jeans-sweater.jpg'
 import landingpage from '../assets/landingpage.jpg'
 import truyenyy from '../assets/6100_2_05.jpg'
+import { motion } from 'framer-motion';
 function Project(props) {
     const projectdata = [
         {
@@ -47,15 +48,25 @@ function Project(props) {
     return (
         <div className='flex flex-col gap-[20px] items-center' id='projects'>
             <div className='text-textheading text-[35px] font-medium'>Review my project</div>
-            <div className='text-textcolor'>Let's choose the package that is best for you and explore it happily and cheerfully.</div>
+            <div className='text-textcolor'>Please explore my interesting projects below, it may help you to know more about me</div>
             <div className='grid grid-cols-3 gap-[50px] sm:grid-cols-1 '>
                 {projectdata.map((item,index)=>(
-                    <div className="rounded-[10px] border border-[#ddd] flex flex-col items-center gap-[30px] py-[50px] hover:border-primary duration-150 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/70 px-[76px]" key={index}>
+                    <motion.div
+                    initial = {{
+                        y: 50,
+                        opacity: 0,
+                     }}
+                     whileInView={{
+                        y: 0,
+                        opacity: 1
+                     }}
+                     viewport={{ once: true }}
+                     className="rounded-[10px] border border-[#ddd] flex flex-col items-center gap-[30px] py-[50px] hover:border-primary duration-150 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/70 px-[76px]" key={index}>
                         <img src={item.image} alt={item.title} className=' h-[150px] object-cover rounded-md' />
                         <div className='text-[18px] text-textheading font-medium uppercase'>{item.title}</div>
                         <div className='text-textcolor text-[14px]'>{item.desc}</div>
                         <a href={item.link} target='_blank' className='block py-[13px] px-[63px] hover:bg-primary hover:text-white border border-primary rounded-full  whitespace-nowrap duration-150 active:scale-90 text-primary mt-auto'>View now</a>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>

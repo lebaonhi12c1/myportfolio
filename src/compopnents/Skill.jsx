@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {motion} from 'framer-motion'
 function Skill(props) {
     const skilldata = [
         {
@@ -64,10 +64,23 @@ function Skill(props) {
     return (
         <div className='grid grid-cols-4 gap-4 sm:grid-cols-1' id='skills'>
             {skilldata.map((item,index)=>(
-                <div className="flex items-center gap-4 p-4 shadow-lg shadow-primary/70 rounded-lg" key={index}>
+                <motion.div
+                 initial = {{
+                    y: 50,
+                    opacity: 0,
+                 }}
+                 whileInView={{
+                    y: 0,
+                    opacity: 1
+                 }}
+                 transition={{
+                    delay: index-(index-0.5)
+                 }}
+                 viewport={{ once: true }}
+                 className="flex items-center gap-4 p-4 shadow-lg shadow-primary/70 rounded-lg" key={index}>
                     <img src={item.image} alt={item.title} className='w-[100px] h-[100px] object-cover rounded-lg' />
                     <div className='uppercase text-textheading font-bold'>{item.title}</div>
-                </div>
+                </motion.div>
             ))}
         </div>
     );
